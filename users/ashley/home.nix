@@ -15,10 +15,11 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  home.packages = with pkgs; [ blender ];
+  home.packages = with pkgs; [ blender fzf zoxide ];
   programs.bash.enable = true;
 
   programs.bash.bashrcExtra = ''
+    eval "$(zoxide init bash)"
     eval "$(ssh-agent -s)" 2&> /dev/null
     ssh-add ~/.ssh/ashley.pem 2&> /dev/null
   '';
