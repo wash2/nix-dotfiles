@@ -121,8 +121,8 @@
     programs.bash.enable = true;
 
     programs.bash.bashrcExtra = ''
-      eval "$(ssh-agent -s)"
-      ssh-add ~/.ssh/ashley.pem
+      eval "$(ssh-agent -s)" 2&> /dev/null
+      ssh-add ~/.ssh/ashley.pem 2&> /dev/null
     '';
   };
 
