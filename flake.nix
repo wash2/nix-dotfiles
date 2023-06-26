@@ -7,8 +7,8 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     cosmic-comp.url = "github:pop-os/cosmic-comp/master_jammy";
     cosmic-comp.inputs.nixpkgs.follows = "nixpkgs";
-    cosmic-session.url = "github:pop-os/cosmic-session/0201b14c803c3e20c385da9e3e41b18e4ef55824";
-    cosmic-session.inputs.nixpkgs.follows = "nixpkgs";
+    cosmic-session.url = "github:pop-os/cosmic-session/14a99bc4175008e288925e8e5abc5fe9156cb502";
+    # cosmic-session.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, home-manager, cosmic-comp, cosmic-session }@attrs: let
@@ -17,6 +17,7 @@
       inherit system;
       config = { allowUnfree = true; };
     };
+    cosmic-session.inputs.nixpkgs.follows = "nixpkgs";
 
     lib = nixpkgs.lib;
 

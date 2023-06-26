@@ -29,4 +29,13 @@
     target = "cosmic-comp/config.ron";
     recursive = true;
   };
+
+  systemd.user.targets.cosmic-session = {
+    Unit = {
+      	Description="Cosmic Session Target";
+        Documentation="man:systemd.special(7)";
+        BindsTo= [ "graphical-session.target" ];
+        Before= [ "graphical-session.target" ];
+    };
+  };
 }

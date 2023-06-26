@@ -52,9 +52,9 @@
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
-  systemd.user.services.cosmic-session.enable = true;
+  services.xserver.displayManager.gdm.wayland = true;
   services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.sessionPackages = [  inputs.cosmic-session.packages.x86_64-linux.default ];
+  services.xserver.displayManager.sessionPackages = [ inputs.cosmic-session.packages.x86_64-linux.default ];
   services.xserver.displayManager.defaultSession = "cosmic";
   # Configure keymap in X11
   services.xserver = {
@@ -114,7 +114,7 @@
   environment.systemPackages = with pkgs; [
     cachix
     vim
-    inputs.cosmic-comp.packages.x86_64-linux.default
+    # inputs.cosmic-comp.packages.x86_64-linux.default
     inputs.cosmic-session.packages.x86_64-linux.default
   ];
 

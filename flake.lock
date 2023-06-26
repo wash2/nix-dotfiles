@@ -31,22 +31,20 @@
         "fenix": "fenix_2",
         "flake-utils": "flake-utils_4",
         "nix-filter": "nix-filter_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1687803175,
-        "narHash": "sha256-ReV+eV1jRFuuqWzf0zahjmM821CYhpZbIe5aJ4tHk/Y=",
+        "lastModified": 1687814227,
+        "narHash": "sha256-q/zK2DS3zZn5y9pRUGZPTtjkkheoYqBTnmA/RQ7RM2U=",
         "owner": "pop-os",
         "repo": "cosmic-session",
-        "rev": "0201b14c803c3e20c385da9e3e41b18e4ef55824",
+        "rev": "14a99bc4175008e288925e8e5abc5fe9156cb502",
         "type": "github"
       },
       "original": {
         "owner": "pop-os",
         "repo": "cosmic-session",
-        "rev": "0201b14c803c3e20c385da9e3e41b18e4ef55824",
+        "rev": "14a99bc4175008e288925e8e5abc5fe9156cb502",
         "type": "github"
       }
     },
@@ -299,11 +297,27 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1687555006,
-        "narHash": "sha256-GD2Kqb/DXQBRJcHqkM2qFZqbVenyO7Co/80JHRMg2U0=",
+        "lastModified": 1687701825,
+        "narHash": "sha256-aMC9hqsf+4tJL7aJWSdEUurW2TsjxtDcJBwM9Y4FIYM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "33223d479ffde3d05ac16c6dff04ae43cc27e577",
+        "rev": "07059ee2fa34f1598758839b9af87eae7f7ae6ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1687729501,
+        "narHash": "sha256-mTLkMePoHUWvTCf3NuKbeYEea/tsikSIKBWwb9OfRr4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "35130d4b4f0b8c50ed2aceb909a538c66c91d4a0",
         "type": "github"
       },
       "original": {
@@ -317,7 +331,7 @@
         "cosmic-comp": "cosmic-comp",
         "cosmic-session": "cosmic-session",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "rust-analyzer-src": {
