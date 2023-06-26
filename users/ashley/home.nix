@@ -15,7 +15,7 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  home.packages = with pkgs; [ blender fzf zoxide ];
+  home.packages = with pkgs; [ fzf zoxide alacritty ksnip neofetch ];
   programs.bash.enable = true;
 
   programs.bash.bashrcExtra = ''
@@ -23,4 +23,10 @@
     eval "$(ssh-agent -s)" 2&> /dev/null
     ssh-add ~/.ssh/ashley.pem 2&> /dev/null
   '';
+
+  xdg.configFile.cosmic-comp = {
+    source = ./config/cosmic-comp/config.ron;
+    target = "cosmic-comp/config.ron";
+    recursive = true;
+  };
 }

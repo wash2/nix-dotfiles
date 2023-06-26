@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -52,8 +52,10 @@
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
+  systemd.user.services.cosmic-session.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-
+  services.xserver.displayManager.sessionPackages = [  inputs.cosmic-session.packages.x86_64-linux.default ];
+  services.xserver.displayManager.defaultSession = "cosmic";
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
@@ -104,32 +106,6 @@
     ];
   };
 
-  # home-manager.users.ashley = { pkgs, ... }: {
-  #   # ==== https://mipmip.github.io/home-manager-option-search/ ====
-  #   # ==============================================================
-  #   #
-  #   # This value determines the Home Manager release that your
-  #   # configuration is compatible with. This helps avoid breakage
-  #   # when a new Home Manager release introduces backwards
-  #   # incompatible changes.
-  #   #
-  #   # You can update Home Manager without changing this value. See
-  #   # the Home Manager release notes for a list of state version
-  #   # changes in each release.
-  #   home.stateVersion = "23.05";
-
-  #   # Let Home Manager install and manage itself.
-  #   programs.home-manager.enable = true;
-
-  #   home.packages = with pkgs; [ blender ];
-  #   programs.bash.enable = true;
-
-  #   programs.bash.bashrcExtra = ''
-  #     eval "$(ssh-agent -s)" 2&> /dev/null
-  #     ssh-add ~/.ssh/ashley.pem 2&> /dev/null
-  #   '';
-  # };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -137,8 +113,9 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     cachix
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    vim
+    inputs.cosmic-comp.packages.x86_64-linux.default
+    inputs.cosmic-session.packages.x86_64-linux.default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
