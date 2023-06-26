@@ -114,8 +114,19 @@
   environment.systemPackages = with pkgs; [
     cachix
     vim
-    # inputs.cosmic-comp.packages.x86_64-linux.default
-    inputs.cosmic-session.packages.x86_64-linux.default
+    inputs.cosmic-session.packages.x86_64-linux.default 
+    inputs.cosmic-comp.packages.x86_64-linux.default
+    inputs.cosmic-panel.packages.x86_64-linux.default
+    inputs.cosmic-applibrary.packages.x86_64-linux.default
+    inputs.cosmic-launcher.packages.x86_64-linux.default
+    inputs.cosmic-settings.packages.x86_64-linux.default
+    inputs.cosmic-applets.packages.x86_64-linux.default
+    # inputs.cosmic-notifications.packages.x86_64-linux.default
+    inputs.cosmic-osd.packages.x86_64-linux.default
+    inputs.cosmic-workspaces.packages.x86_64-linux.default
+    inputs.cosmic-bg.packages.x86_64-linux.default
+    inputs.xdg-desktop-portal-cosmic.packages.x86_64-linux.default
+    inputs.cosmic-settings-daemon.packages.x86_64-linux.default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
