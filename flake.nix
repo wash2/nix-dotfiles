@@ -9,13 +9,13 @@
     cosmic-panel.url = "github:pop-os/cosmic-panel/master_jammy";
     cosmic-settings.url = "github:pop-os/cosmic-settings/master_jammy";
     cosmic-settings-daemon.url = "github:pop-os/cosmic-settings-daemon/master_jammy";
-    cosmic-launcher.url = "github:pop-os/cosmic-launcher/aad3e0b56f2a07dad0a7c3045c87045a01a49809";
-    cosmic-applibrary.url = "github:pop-os/cosmic-applibrary/da5618ca25fe338573310b5afb29712c742a6b92";
-    cosmic-session.url = "github:pop-os/cosmic-session/a5589ab6f4635a64cc5a3aa0d1dbe79169252c52";
+    cosmic-launcher.url = "github:pop-os/cosmic-launcher/master_jammy";
+    cosmic-applibrary.url = "github:pop-os/cosmic-applibrary/master_jammy";
+    cosmic-session.url = "github:pop-os/cosmic-session/ab26218ab2139dc884a66bdb57f6216b248670bf";
     cosmic-applets.url = "github:pop-os/cosmic-applets/58c27e88603ad47479115b632d2fa87579d8fa39";
     cosmic-workspaces.url = "github:pop-os/cosmic-workspaces-epoch/717c454a7e31c4ffc8baf6c1d1c90fd74a223e55";
     cosmic-osd.url = "github:pop-os/cosmic-osd/b6d93f736d4b9ab3df4cceafaf59cd8c95859ed6";
-    cosmic-bg.url = "github:pop-os/cosmic-bg/d64ade9e7164990b8bb2abc8a754ca16edcff652";
+    cosmic-bg.url = "github:pop-os/cosmic-bg/master_jammy";
     xdg-desktop-portal-cosmic.url = "github:pop-os/xdg-desktop-portal-cosmic/master_jammy";
   };
 

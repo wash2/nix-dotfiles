@@ -32,17 +32,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1687815288,
+        "lastModified": 1687822877,
         "narHash": "sha256-ApBVe8cwzgJjg+2ypT8Ia6G/u5bImOZMopTsWjQIYyI=",
         "owner": "pop-os",
         "repo": "cosmic-applibrary",
-        "rev": "da5618ca25fe338573310b5afb29712c742a6b92",
+        "rev": "623fdf784f91bf37057124eaffd594cf33759d48",
         "type": "github"
       },
       "original": {
         "owner": "pop-os",
+        "ref": "master_jammy",
         "repo": "cosmic-applibrary",
-        "rev": "da5618ca25fe338573310b5afb29712c742a6b92",
         "type": "github"
       }
     },
@@ -55,17 +55,17 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1687818798,
-        "narHash": "sha256-oYIOkmfe8+I4XvTcuUs/UMKeIAsQB+b5UolbUluYuP8=",
+        "lastModified": 1687822841,
+        "narHash": "sha256-etQ1Xzjbz1HLugXpjJxYTZx99cWQPgbUS/5sjKNIcOw=",
         "owner": "pop-os",
         "repo": "cosmic-bg",
-        "rev": "d64ade9e7164990b8bb2abc8a754ca16edcff652",
+        "rev": "4e1652f06bacc545eced24b11cb639ecead3b90c",
         "type": "github"
       },
       "original": {
         "owner": "pop-os",
+        "ref": "master_jammy",
         "repo": "cosmic-bg",
-        "rev": "d64ade9e7164990b8bb2abc8a754ca16edcff652",
         "type": "github"
       }
     },
@@ -101,17 +101,17 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1687816733,
+        "lastModified": 1687822811,
         "narHash": "sha256-AXkCwfubZX77NAbPeHHcj6dAKF4Y5p9ZJmhTQDsIGME=",
         "owner": "pop-os",
         "repo": "cosmic-launcher",
-        "rev": "aad3e0b56f2a07dad0a7c3045c87045a01a49809",
+        "rev": "9990812cb1e6d7e0dab8c1f4b141a14184a261d8",
         "type": "github"
       },
       "original": {
         "owner": "pop-os",
+        "ref": "master_jammy",
         "repo": "cosmic-launcher",
-        "rev": "aad3e0b56f2a07dad0a7c3045c87045a01a49809",
         "type": "github"
       }
     },
@@ -170,17 +170,17 @@
         "nixpkgs": "nixpkgs_8"
       },
       "locked": {
-        "lastModified": 1687821151,
+        "lastModified": 1687822980,
         "narHash": "sha256-okMHpFk0F57vIaJrPyn4EF4M5K4yEetgvoeoh2C1ouY=",
         "owner": "pop-os",
         "repo": "cosmic-session",
-        "rev": "a5589ab6f4635a64cc5a3aa0d1dbe79169252c52",
+        "rev": "ab26218ab2139dc884a66bdb57f6216b248670bf",
         "type": "github"
       },
       "original": {
         "owner": "pop-os",
         "repo": "cosmic-session",
-        "rev": "a5589ab6f4635a64cc5a3aa0d1dbe79169252c52",
+        "rev": "ab26218ab2139dc884a66bdb57f6216b248670bf",
         "type": "github"
       }
     },
