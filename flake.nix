@@ -11,7 +11,7 @@
     cosmic-settings-daemon.url = "github:pop-os/cosmic-settings-daemon/master_jammy";
     cosmic-launcher.url = "github:pop-os/cosmic-launcher/master_jammy";
     cosmic-applibrary.url = "github:pop-os/cosmic-applibrary/master_jammy";
-    cosmic-session.url = "github:pop-os/cosmic-session/ab26218ab2139dc884a66bdb57f6216b248670bf";
+    cosmic-session.url = "github:pop-os/cosmic-session/7e0e8a1fd7942fc709e740849642c67c18a811c6";
     cosmic-applets.url = "github:pop-os/cosmic-applets/58c27e88603ad47479115b632d2fa87579d8fa39";
     cosmic-workspaces.url = "github:pop-os/cosmic-workspaces-epoch/717c454a7e31c4ffc8baf6c1d1c90fd74a223e55";
     cosmic-osd.url = "github:pop-os/cosmic-osd/b6d93f736d4b9ab3df4cceafaf59cd8c95859ed6";
