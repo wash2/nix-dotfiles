@@ -114,6 +114,7 @@
   environment.systemPackages = with pkgs; [
     cachix
     vim
+    xdg-desktop-portal-gtk
     inputs.cosmic-session.packages.x86_64-linux.default 
     inputs.cosmic-comp.packages.x86_64-linux.default
     inputs.cosmic-panel.packages.x86_64-linux.default
@@ -128,7 +129,9 @@
     inputs.xdg-desktop-portal-cosmic.packages.x86_64-linux.default
     inputs.cosmic-settings-daemon.packages.x86_64-linux.default
   ];
-
+  
+  services.dbus.implementation = "broker";
+  
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
